@@ -89,21 +89,21 @@ public class Polynomial {
 
         System.out.println("Let's start with inputting your polynomial!");
         System.out.println("First, please provide the lead multiplier(a).");
-
         int leadMul = Integer.parseInt(reader.nextLine());
+
         System.out.println("Alrighty, next you can decide your own variable name(x) (please make sure it's one character...)!");
-
         char var = (char) br.read();
-        System.out.println("I'm also going to require a lead exponent(b) from you .");
 
+        System.out.println("I'm also going to require a lead exponent(b) from you.");
         int exp = Integer.parseInt(reader.nextLine());
-        System.out.println("Let's add a multiplier for the second term(c) as well .");
 
+        System.out.println("Let's add a multiplier for the second term(c) as well.");
         int mult2 = Integer.parseInt(reader.nextLine());
-        System.out.println("And fiiiinally, let's add a constant(d) to the mess .");
+
+        System.out.println("And fiiiinally, let's add a constant(d) to the mess.");
         int cons = Integer.parseInt(reader.nextLine());
 
-        System.out.println("Lovely! Now we have our polynomial: ");
+        System.out.println("Lovely! Now we have our polynomial :)");
 
         Polynomial poly = new Polynomial(leadMul, var, exp, mult2, cons);
 
@@ -118,7 +118,6 @@ public class Polynomial {
         System.out.println("Well you asked for it, so here you go!");
         String derived = poly.derive(poly);
         System.out.println(derived);
-        System.out.println(" ");
         System.out.println(" ");
         System.out.println(" ");
         System.out.println("P.S. If you don't believe me, just check it from WolframAlpha... ");
