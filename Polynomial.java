@@ -104,14 +104,30 @@ public class Polynomial {
         int cons = Integer.parseInt(reader.nextLine());
 
         System.out.println("Lovely! Now we have our polynomial: ");
+
         Polynomial poly = new Polynomial(leadMul, var, exp, mult2, cons);
+
         System.out.println(poly);
 
         System.out.println(" ");
         System.out.println("Now, Let's derive it!");
         System.out.println("Ready? Shall we derive? (Yup/Nope)");
-        String ans = reader.nextLine();
 
+        poly.doWeDerive();
+
+        System.out.println("Well you asked for it, so here you go!");
+        String derived = poly.derive(poly);
+        System.out.println(derived);
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println("P.S. If you don't believe me, just check it from WolframAlpha... ");
+    }
+
+    public void doWeDerive(){
+
+        Scanner reader = new Scanner(System.in);
+        String ans = reader.nextLine();
         while (true) {
             if (ans.equals("Yup")) {
                 break;
@@ -119,16 +135,8 @@ public class Polynomial {
             System.out.println("Ready? (Yup/Nope)");
             ans = reader.nextLine();
         }
-
-        System.out.println("Well you asked for it, so here you go!");
-        String derived = poly.derive(poly);
-        System.out.println(derived);
-
-        System.out.println(" ");
-        System.out.println(" ");
-        System.out.println(" ");
-        System.out.println("P.S. If you don't believe me, just check it from WolframAlpha... ");
     }
+
 
     @Override
     public String toString() {
