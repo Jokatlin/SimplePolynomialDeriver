@@ -87,7 +87,7 @@ public class Polynomial {
         System.out.println("(For more advanced features, please stay tuned for version 2.0!)");
         System.out.println(" ");
 
-        System.out.println("Let's start with inputting your polynomial!");
+        System.out.println("Let's start with inputting the polynomial!");
         System.out.println("First, please provide the lead multiplier(a).");
         int leadMul = Integer.parseInt(reader.nextLine());
 
